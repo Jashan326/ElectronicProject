@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0px;
+        /* color: white; */
+        padding:0px ;
+    }
+    th{
+        text-align: left;
+    }
+    th,td{
+
+        padding:25px;
+        
+    }
+    div{
+        box-shadow: 0px 0px 50px 3px;
+    }
+    legend{
+        color: white;
+    }
+    label{
+        color: white;
+    }
+    .button{
+        background-color: #426cf5;
+ 
+ color: white;
+ padding: 15px 32px;
+border:none;
+ 
+ /* display: inline-block; */
+ font-size: 16px;
+
+ cursor: pointer;
+    }
+    .button:hover{
+        background-color: red;
+    }
+    h1{
+        /* color:#4CAF50 */
+        color:#426cf5
+    }
+    input[type=submit]{
+        background-color: #4e4caf;
+ 
+ color: white;
+ padding: 15px 32px;
+border:none;
+ 
+ /* display: inline-block; */
+ font-size: 16px;
+
+ cursor: pointer;
+    }
+    </style>
+    <script>
+        function myfun()
+        { 
+            var x=document.getElementById('box').value;
+       
+             var z=document.getElementById('box2')
+             var k=document.getElementById('box1')
+            var y=document.getElementById('box');
+            if(x=='login')
+         { 
+              y.value='signup'
+         y.innerHTML='signup';
+       
+         z.style.display='block';
+         k.style.display='none';
+         
+       
+        }
+        else if(x=='signup')
+        {
+            y.value='login';
+            y.innerHTML='login';
+            z.style.display='none';
+         k.style.display='block';
+
+          //  window.alert(y.value)
+
+        }
+    }
+    </script>
+</head>
+<body>
+    <div style="float: left;width: 50%;background-color: aqua;height:930px;background-image: url('login.jpg');background-size: cover;border-radius: 10px;">
+    <!--      -->
+    </div>
+    <div style="float: left;width:50%;height:932px;text-align: center;" id="box1">
+        <br>
+        <h1>Create Your Account</h1>
+        
+        <br><br><br><br><br><br><br>
+        <center>
+        <div style="width: 70%;border-radius: 20px;background-color: #426cf5">
+         <form action="finalHOME.html" target="_blank">
+            <fieldset style="height:600px;border: none;">
+                <legend style="padding:12px" > <h1 style="color: white">sign up </h1></legend>
+                
+            <table style="text-align: center;" >
+                
+                <tr > 
+                    <th >
+                        <label for="Fname">First Name</label>
+
+                    </th>
+                    <td>
+                        <input type="text" id="Fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Lname">Last Name</label>
+                    </th>
+                    <td>
+                     <input type="text" id="LName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Email">Email Id</label>
+                    </th>
+                    <td>
+                     <input type="email" id="Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Password">Enter Password</label>
+                    </th>
+                    <td>
+                     <input type="password" id="Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th >
+                        <label for="Cnfrm">Confirm Password</label>
+                    </th>
+                    <td>
+                        <input type="password" id="Cnfrm" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+
+                    <th>
+                        <!-- <a href="finalHOME.html" target="_blank"> -->
+                            <!-- <button type="button">   -->
+                        <input type="submit" id="create" >
+                    <!-- </button> -->
+                    <!-- </a> -->
+                    </th>
+                </tr>
+        
+                
+            </table>
+            <br>
+            <br>
+            <br>
+            <!-- <h3>By selecting Crate account,you agree to our Terms and have read and acknowledge our global privacy statement</h3> -->
+        </fieldset>
+    </form>
+    
+</div>
+</center>
+    </div>
+
+
+    <!-- BUTTON -->
+    <button type="button" value="login" style="position:absolute;top:0px;right:0px" class="button" onclick="myfun()" id="box">login</button>
+
+
+
+    <div style="float: left;width:50%;height:932px;text-align: center;display: none;" id="box2">
+        <br>
+        <h1>Login To Your Account</h1>
+        
+    <br><br><br><br><br><br><br>
+        <center>
+        <div style="width: 70%;border-radius: 20px;background-color: #426cf5">
+         <form action="finalHOME.html" target="_blank" >
+            <fieldset style="border:none;height:600px;">
+                <legend style="padding:12px"> <h1 style="color: white;">Login </h1></legend>
+                
+            <table style="text-align: center;" >
+                
+                <tr>
+                    <th>
+                        <label for="Uname">UserName</label>
+
+                    </th>
+                    <td>
+                        <input type="email" id="Uname" required>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <th>
+                        <label for="Password">Enter Password</label>
+                    </th>
+                    <td>
+                     <input type="password" id="Password" required>
+                    </td>
+                </tr>
+               
+
+                <tr>
+                    <th>
+
+                    </th>
+                    <th>
+                    
+                       
+                        <a href="finalHOME.html">
+                        <input type="submit" id="create" >
+                        </a>
+                    </th>
+                </tr>
+        
+                
+            </table>
+            <br>
+            <br>
+            <br>
+            <!-- <h3>By selecting Crate account,you agree to our Terms and have read and acknowledge our global privacy statement</h3> -->
+        </fieldset>
+    </form>
+    
+</div>
+</center>
+    </div>
+    <!-- <div style=" background-color: grey;height: 130px;width: 100%;display: flex;align-items:center">
+<marquee behavior="" direction="">MERI COMPANY</marquee>
+    </div> -->
+</body>
+</html>

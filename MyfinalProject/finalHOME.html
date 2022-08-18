@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="icon" type="image/x-icon" href="https://www.logodesign.net/logo/tech-wire-in-line-art-bulb-1398ld.png?size=2&industry=electronics">
+    <style>
+       span:hover{
+        color: black;
+        cursor: pointer;
+       }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        #box{
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px 10px;
+        }
+
+        
+        .rotat:hover{
+            cursor: pointer;
+            transition: 2s;
+            transform: translate(0px,-20px);
+        }
+        .leftside{
+            margin-left: 102px
+        }
+        p{
+            font-size: bold;
+        }
+        li{
+          
+            /* text-align: center; */
+            margin-right: 25px ;
+            display: inline-block;
+            
+        }
+        #btn{
+            height:60px;width:200px;border-radius:30px;margin-left: 100px;font-size:30px ;
+           /* / background-color: rgb(231, 228, 79); */
+        }
+        #btn:hover{
+            transition: 0.6s ease;
+            background-color: black;
+            color: azure;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .btn1{
+            height:50px;width:200px;border-radius:30px;margin-left: 10px;font-size:30px ;
+            /* background-color: rgb(231, 228, 79); */
+/* #2DF8C5 */
+
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        #ptag{
+            cursor: context-menu;
+        }
+        .btn1:hover{
+
+            transition: 0.6s ease;
+            background-color: black;
+            color: azure;
+        }
+        .nav{
+            padding: 32px;
+            height: 60px;
+        }
+        .nav:hover{
+            transition: 0.4s ease-in-out;
+            background-color: black;
+            color: antiquewhite;
+            cursor: pointer;
+            
+        }
+        .Litem{
+            /* margin-top:70px; */
+            padding: 10px;
+            height: 50px;
+        }
+        .Litem:hover{
+            /* height: 20px; */
+            transition: 0.4s ease;
+            background-color: red;
+            cursor: pointer;
+            
+        }
+        /* .Litems:hover{
+            ;
+            cursor: pointer;
+        } */
+      span:hover{
+        color: red;
+
+
+      }
+      .point{
+        cursor:context-menu
+      }
+      
+       
+    </style>
+    <script>
+           var images = [
+  
+  " lapppy.jpg",
+  "jblspeaker.webp",
+  "samsung.webp",
+  "mob12.webp"
+ ]
+ var i = 0;
+ setInterval(function() {
+     var x=document.getElementById('hi');
+     x.style.backgroundImage = "url(" + images[i] + ")";
+       i = i + 1;
+       if (i == images.length) {
+         i =  0;
+ 
+       }
+ }, 3000);
+ 
+    </script>
+   
+</head>
+<body>
+    <div style="display: flex;flex-direction:column;background-color: white">
+        <div style="background-color: white;padding: 18px;">
+           <marquee > <h1>WELCOME TO THE WEBSITE</h1></marquee>
+            
+        </div>
+        <div style="  position: sticky;top:0px;">
+    <div style="display: flex;flex-direction:row;justify-content:space-between;background-color: black;color: white">
+        <p style="letter-spacing: 1px;margin-top: 8px;margin-left:12px ;" class="point">Free shipping over 50$</p>
+        <ul >
+            <a href="#bx1" target="_blank">
+            <li class="Litem">
+            About Us
+            </li>
+            </a>
+            <a href="contactus.html" target="_blank">
+            <li class="Litem">
+                Contact 
+            </li>
+        </a>
+        <a href="newfedback.html" target="_blank">
+            <li class="Litem">
+               Feedback 
+            </li>
+            </a>
+            <li class="Litem">
+                Call us 1112345666
+            </li>
+        </ul>
+        
+
+       </div>
+       <div style="height:65px;letter-spacing:2px;background-color: white;">
+       <h1 style="float: left;margin-left: 20px;margin-top: 20px;" class="point">
+       MYConics
+       </h1>
+       <a href="login1.html" target="_blank"><h2 style="float: right;margin-left: 15px;margin-top: 20px;" >Login/Signup</h2>
+       
+       <img src="loginlogo.jpg" style="height: 35px;float:right;margin-top: 20px">
+    </a>
+       
+    </div>
+    <div style="display:flex;flex-direction:row;justify-content:space-between;background-color: rgb(233, 232, 232);clear: both;">
+        <ul >
+            <a href="#box"> 
+            <li class="nav">
+             Shop All 
+            </li>
+        </a>
+            <a href="laptop.html" target="_blank">
+            <li class="nav">
+
+                Computers
+            </li>
+        </a>
+        <a href="tablets.html" target="_blank">
+            <li class="nav">
+                Tablets
+            </li>
+            </a>
+            <a href="Mobile.html" target="_blank">
+            <li class="nav">
+               Mobile
+            </li>
+            </a>
+            <a href="tv.html" target="_blank">
+            <li class="nav">
+                Tv & Home Cinema
+            </li>
+            </a>
+            <a href="watches.html" target="_blank">
+            <li class="nav">
+                Watches
+            </li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<!-- JS PART (Moving Image) -->
+
+
+<div >
+    <div style="height: 700px;background-size: cover;" id="hi">
+     
+    </div>
+</div>
+    
+    <div style="display: flex;height:800px;background-color: rgb(233, 232, 232);;justify-content: space-evenly;align-items: center;">
+        <div style="height: 600px;width: 800px;background-image: url('apl.jpg');background-size: cover;">
+           <div style="margin-top: 32px;margin-left: 22px;">  
+            <p style="color: white;font-size:20px;letter-spacing:4px">
+                Summer Deals
+            </p>
+            <h1 style="color:azure;letter-spacing: 8px;margin-top: 20px;">
+                Up to <br>
+                20% off
+            </h1>
+            <p style="color: white;font-size:20px;letter-spacing:4px;margin-top: 20px;">
+                On selected  Items
+            </p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="btn1">
+               <a href="laptop.html" target="_blank">Shop</a>  
+    
+            </button>
+            
+        </div>
+        <div style="height: 600px;width: 800px;background-image:url('headp.webp');background-size: cover;">
+            <div style="margin-top: 32px;margin-left: 22px;">  
+                <p style="color: white;font-size:20px;letter-spacing:4px">
+                    Just Audio
+                </p>
+                <h1 style="color:azure;letter-spacing: 8px;margin-top: 20px;">
+                    The Best sound <br>
+                    Speaker available 
+                </h1>
+                <p style="color: white;font-size:20px;letter-spacing:4px;margin-top: 20px;">
+                    at reasonable rate
+                </p>
+                </div>
+                <br>
+                <br>
+                <button type="button" class="btn1">
+                  <a href="speaker.html">  Shop </a> 
+        
+                </button>
+        </div>
+
+       
+
+    </div>
+    <br>
+    <!-- <br>
+    <div style="display: flex;background-color:red;height:200px;">
+        <div style="background-color:white;height:200px;width:25%">
+            <h3>
+            Free Shipping on order over 50$
+            </h3>
+        </div>
+        <div style="background-color:pink;height:200px;width:25%">
+            <h3>
+            Free Shipping on order over 50$
+            </h3>
+        </div>
+        <div style="background-color:yellow;height:200px;width:25%">
+            <h3>
+            Free Shipping on order over 50$
+            </h3>
+        </div>
+        <div style="background-color:orange;height:200px;width:25%">
+            <h3>
+            Free Shipping on order over 50$
+            </h3>
+        </div>
+
+    </div> -->
+
+    <br><br>
+    <br><br>
+    <br>
+
+
+<!-- CATEGORY PAGE -->
+
+
+
+    <div style="height: 910px;width:1800px;margin:4px 49px;border: 2px solid black;background-color: rgb(232, 214, 190);" id="box">
+        
+        <h1 style="width: 300px;margin:40px auto;font-size: 2;" >Shop by categories  </h1>
+        <hr style="height: 6px;background-color:black">
+        <br>
+        <br>
+      
+        
+          <div style="display: flex ;justify-content: space-around;flex-direction: column;height: 668px;">
+              <div style="display: flex;justify-content: space-around;" >
+              <div >
+                <a href="laptop.html" target="_blank">
+                  <img src="lapto.webp" style=" height: 250px;width: 250px;border-radius:50% ;" class="rotat">
+                  </a>
+                  <br>
+                  <h3 class="leftside">Laptop  </h3>
+              </div>
+  
+              <div id="rotate">
+                <a href="Mobile.html" target="_blank">
+                  <img src="mobile.jpg"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                 <h3  class="leftside">Mobile</h3> 
+              </div>
+  
+              <div>
+                <a href="watches.html" target="_blank">
+                  <img src="smart.jpg"  style="height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3  style="margin-left: 60px;">Wearable Tech</h3>
+              </div>
+  
+              <div>
+                <a href="tablets.html" target="_blank">
+                  <img src="tablet.jpg"  style=" height: 250px;width: 300px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3 class="leftside">Tablets</h3>
+              </div>
+  
+    
+          </div>
+          
+      <br>
+      
+      
+      <br>
+          <div style="display: flex;justify-content: space-around;">
+              <div>
+                <a href="speaker.html" target="_blank">
+                  <img src="speaker.jpg"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3 class="leftside">Speaker</h3>
+                  
+              </div>
+  
+              <div>
+                <a href="headphones.html" target="_blank">
+                  <img src="headphone.webp"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3 class="leftside">Headphone</h3>
+              </div>
+  
+              <div>
+                <a href="tv.html" target="_blank">
+                  <img src="tv1.webp"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3 style="margin-left: 60px;">Tv & Home Cinema</h3>
+              </div>
+  
+              <!-- <div>
+                <a href=".html" target="_blank">
+                  <img src="washingmachine.jpg"  style=" height: 250px;width: 300px;border-radius:50% ;"alt="" class="rotat"></a>
+                  <br>
+                  <h3 class="leftside">Washing machine</h3>
+              </div> -->
+  
+  
+          </div>
+  
+          </div>
+   
+    
+      </div>
+<br>
+<br>
+
+
+<!-- ABOUT US -->
+
+
+<div class="container" style="position: relative;" id="bx1" >
+    
+    <img src="aboutus1.png" style="width: 100%;
+    height: auto;">
+    
+    <h1 style="position: absolute;top:20px;left: 800px;">
+        ABOUT US
+    </h1>
+
+    <div style="position: absolute;top:30%;line-break:anywhere;width: 350px;margin-left: 10px;border-radius: 50%;border: 1px solid black;padding:50px;background-color: rgb(232, 214, 190)">
+        <h1 style="text-align:center"> Our work </h1>
+        <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vero? Eius rerum libero corporis reprehenderit, eum magnam fugit adipisci dicta delectus eveniet ea exercitationem repudiandae voluptatem, quaerat architecto ratione dolorem?
+        
+
+    </div>
+<div style="position:absolute;top:30%;left:80%;line-break: anywhere;margin-right:10px;border-radius: 50%;border: 1px solid black;padding:50px;background-color: rgb(232, 214, 190)">
+    <h1 style=" text-align:center; ">OUR STORY</h1>
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis eius exercitationem quibusdam aliquam, porro necessitatibus libero sunt enim neque blanditiis aspernatur maiores fuga quas, similique cumque ducimus ullam aliquid!
+
+</div>
+
+
+</div>
+<footer style="display:flex;height:300px;background-color: rgb(232, 214, 190);justify-content: space-around;">
+
+
+<div>
+    <br>
+    <h1 class="headingcenter" style="text-align:center ;">
+        Our Mission
+    </h1>
+    <br>
+    <p style="justify-content: space-around;padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero officia commodi ea dolore numquam voluptates quasi illum officiis eius cum, tempora qui, sed non, nostrum deleniti aperiam facere. Et?
+    </p>
+</div>
+<div>
+    <br>
+    <h1 class="headingcenter" style="text-align: center;">
+        Our essence
+    </h1>
+    <br>
+    <p style="justify-content: space-around;padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero officia commodi ea dolore numquam voluptates quasi illum officiis eius cum, tempora qui, sed non, nostrum deleniti aperiam facere. Et?
+    </p>
+</div>
+
+<div>
+    <br>
+    <h1  class="headingcenter" style="text-align: center;" >
+        Our promise
+    </h1>
+    <br>
+    <p style="justify-content: space-around;padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero officia commodi ea dolore numquam voluptates quasi illum officiis eius cum, tempora qui, sed non, nostrum deleniti aperiam facere. Et?
+    </p>
+</div>
+<div>
+    <br>
+    <h1  class="headingcenter" style="text-align: center" >
+        Our Vibe
+    </h1>
+    <br>
+    <p style="justify-content: space-around;padding: 10px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero officia commodi ea dolore numquam voluptates quasi illum officiis eius cum, tempora qui, sed non, nostrum deleniti aperiam facere. Et?
+    </p>
+</div>
+
+
+</footer>
+<!-- BRANDS -->
+
+<div style="height: 700px;background-color: beige;padding-top: 100px">
+       
+    <div style="text-align: center; font-size: 30px;">
+       OUR BRANDS</div> 
+        <br>
+        <br>
+        <br>
+        <br>   
+        <center>
+<div style="height: 300px; width: 90%;">
+<div style="float: left; width: 23%; height: 300px; ">
+<img src="https://3.bp.blogspot.com/-4zhdmQMUV50/XBEioo_7bFI/AAAAAAAACcU/9Blx0UgjaCIQ3xjOW6jYBkEFHmzg4P9WwCHMYCw/s1600/asus-logos.jpg" alt="" style="height: 300px; width: 100%;">
+</div>
+<div style="float: left; width: 23%; height: 300px;">
+<img src="https://wallpapercave.com/wp/wp2138452.jpg" alt="" style="height: 300px; width:100%"></div>
+<div style="float: left;width: 23%;height: 300px;">
+<img src="http://image3.mouthshut.com/images/imagesp/925667535s.jpg" alt="" style="height: 300px; width:100%;">
+</div>
+<div style="float: left; width: 23%;height: 300px;"><img src="https://img.onmanorama.com/content/dam/mm/en/news/business/images/2021/1/6/boat-company-logo.jpg.transform/onm-articleimagemob/image.jpg" alt="" style="height: 300px; width:100%;"></div>
+</div>
+</center>
+    </div>
+
+<!-- Footer (STORE LOCATION N MANY MORE)-->
+
+<div style="background-color: pink; height: 450px; display: block;" id="options">
+    <footer style="display:flex;height:450px;background-color:lightgray;justify-content: space-around;  border-bottom: 1px solid black;">
+
+
+        <div>
+            <br>
+            <h1 class="headingcenter" style="text-align: center;">
+                Store Location
+            </h1>
+            <br>
+            <br>
+         
+            <p style="justify-content: space-around;padding: 10px;">
+                500 Terry Francois Street
+                <br>
+                <br>
+                San Francisco, CA 94158
+                <br>
+                <br>
+                info@mysite.com
+                <br>
+                <br>
+                
+                123-456-7890
+            </p>
+        </div>
+        <div>
+            <br>
+            
+            <h1 class="headingcenter" style=" text-align: left;">
+                Shop
+            </h1>
+            <br>
+            <br>
+       
+            <p style="justify-content: space-around;padding: 10px;">
+               
+
+<a href="#box" target="_blank">
+<span> All </span>
+</a>
+<br>
+<br>
+<span> <a href="laptop.html" target="_blank"> Computers </a> </span>
+<br>
+<br>
+<span> <a href="tablets.html" target="_blank">Tablets </a></span>
+<br>
+<br>
+
+<span>
+<a href="speaker.html" target="_blank">Audio </a></span>
+<br>
+<br>
+<a href="Mobile.html" target="_blank">
+<span>
+Mobile</span>
+</a>
+<br>
+<br>
+<span>
+    <a href="tv.html" target="_blank">
+    T.V & Home Cinema
+</a>
+</span>
+<br>
+<br>
+<span>
+    <a href="watches.html" target="_blank">Wearable Tech</a>
+
+</span>
+
+
+            </p>
+        </div>
+        <div>
+            <br>
+            <h1 class="headingcenter" style=" text-align: center;">
+                Customer Support
+            </h1>
+            <br>
+            <br>
+          
+            <p style="justify-content: space-around;padding: 10px;">
+               
+
+
+                <a href="contactus.html" target="_blank">  <span> Contact us</span> </a>
+<br>
+<br>
+<span>
+Help Center </span>
+<br>
+<br>
+<span>
+About Us </span>
+<br>
+<br>
+<span>
+Careers
+</span>
+            </p>
+        </div>
+        <div>
+            <br>
+            <h1 class="headingcenter" style=" text-align: center;">
+                Policy
+            </h1>
+            <br>
+            <br>
+
+         
+            <p style="justify-content: space-around;padding: 10px;" id="ptag">
+                
+
+
+Shipping & Returns 
+<br>
+<br>
+Terms & Conditions
+<br>
+<br>
+Payment Methods 
+<br>
+<br>
+FAQ
+            </p>
+        </div>
+       
+        
+        
+    </footer>
+   </div>
+   <div style="height: 250px; background-color: white">
+    <br>
+    <br>
+            <center>
+               <div style="font-size: 20px;">
+                Payment Gateway
+               </div> 
+            </center>
+    <center>
+        <img src="http://maxtraffic.com/blog/wp-content/uploads/2015/01/paymentgateway.png" alt="">
+    </center>
+    
+           </div>
+           <div style="height: 50px; background-color: lightgray; padding-top: 20px;">
+            <center>
+                © 2023 by Myconics. Proudly created by Jashan verma
+            </center>
+                </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* background-color: orange; */
+        }
+        #box{
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px 10px;
+        }
+
+        
+        .rotat:hover{
+            transition: 2s;
+            transform: translate(0px,-20px);
+        }
+        .leftside{
+            margin-left: 102px
+        }
+        p{
+            font-size: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 910px;width:1800px;margin:4px 49px;border: 2px solid black;background-color: rgb(232, 214, 190);" id="box">
+        
+      <h1 style="width: 300px;margin:40px auto;font-size: 2;" >Shop by categories  </h1>
+      <hr style="height: 6px;background-color:black">
+      <br>
+      <br>
+    
+      <!-- PICS PORTION -->
+        <div style="display: flex ;justify-content: space-around;flex-direction: column;height: 668px;">
+            <div style="display: flex;justify-content: space-around;" >
+            <div >
+                <img src="lapto.webp" style=" height: 250px;width: 250px;border-radius:50% ;" class="rotat">
+                <br>
+                <h3 class="leftside">Laptop  </h3>
+            </div>
+
+            <div id="rotate">
+                <img src="mobile.jpg"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+               <h3  class="leftside">Mobile</h3> 
+            </div>
+
+            <div>
+                <img src="smart.jpg"  style="height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3  style="margin-left: 60px;">Wearable Tech</h3>
+            </div>
+
+            <div>
+                <img src="tablet.jpg"  style=" height: 250px;width: 300px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3 class="leftside">Tablets</h3>
+            </div>
+
+  
+        </div>
+        
+    <br>
+    
+    
+    <br>
+        <div style="display: flex;justify-content: space-around;">
+            <div>
+                <img src="speaker.jpg"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3 class="leftside">Speaker</h3>
+                
+            </div>
+
+            <div>
+                <img src="headphone.webp"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3 class="leftside">Headphone</h3>
+            </div>
+
+            <div>
+                <img src="refrigerator.jpg"  style=" height: 250px;width: 250px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3 style="margin-left: 60px;">Refrigerator</h3>
+            </div>
+
+            <div>
+                <img src="washingmachine.jpg"  style=" height: 250px;width: 300px;border-radius:50% ;"alt="" class="rotat">
+                <br>
+                <h3 class="leftside">Washing machine</h3>
+            </div>
+
+
+        </div>
+
+        </div>
+    <!-- Pics End -->
+  
+    </div>
+    
+</body>
+</html>
